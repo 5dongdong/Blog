@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.odong.blog.mapper.PostMapper">
+
+    <resultMap id="PostResultMap" type="com.odong.blog.domain.Post">
+        <id     property="id"      column="id"/>
+        <result property="title"   column="title"/>
+        <result property="content" column="content"/>
+    </resultMap>
+
+    <select id="getAllPost" resultMap="PostResultMap">
+        SELECT id, title, content
+        FROM post
+        ORDER BY id DESC
+    </select>
+
+
+</mapper>
