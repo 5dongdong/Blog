@@ -1,0 +1,47 @@
+### Java ###
+*.class
+*.log
+*.tmp
+*.out
+
+### IntelliJ IDEA ###
+.idea/
+*.iml
+*.ipr
+*.iws
+
+### VS Code ###
+.vscode/
+
+### MacOS ###
+.DS_Store
+
+### Windows ###
+Thumbs.db
+
+### Gradle ###
+.gradle/
+build/
+out/
+!gradle/wrapper/gradle-wrapper.jar
+
+### Logs ###
+logs/
+*.log
+
+### Spring Boot ###
+# 환경 설정 파일(반드시 제외)
+src/main/resources/application.properties
+src/main/resources/application.yml
+src/main/resources/application-*.properties
+src/main/resources/application-*.yml
+
+# 로컬에서만 사용하는 설정 파일
+.env
+
+### Temporary ###
+*.swp
+*.swo
+
+### Test ###
+/test-output/
